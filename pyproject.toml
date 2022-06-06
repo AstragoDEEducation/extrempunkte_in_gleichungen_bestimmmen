@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "python-template"
+name = "extrempunkte_in_gleichungen_bestimmmen"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["AstragoDE"]
 
 [tool.poetry.dependencies]
-python = ">=3.8.0,<3.9"
+python = ">=3.8.0"
 numpy = "^1.22.2"
+sympy = "^1.10.1"
 
 [tool.poetry.dev-dependencies]
 

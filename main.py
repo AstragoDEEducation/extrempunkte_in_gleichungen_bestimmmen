@@ -58,4 +58,4 @@ else:
     pointType[1] = ("Sattelpunkt")
 
 # Formatierte Ausgabe der Ergebnisse
-print(f"P({points[0][0]}|{points[0][1]}) ist ein {pointType[0]} (f'' = {secondDerivativeInsertedAndSolved[0]}).\nQ({points[1][0]}|{points[1][1]}) ist ein {pointType[1]} (f'' = {secondDerivativeInsertedAndSolved[1]}).")
+print(f"P({points[0][0]}|{points[0][1]}) ist ein {pointType[0]} (f''= {secondDerivativeInsertedAndSolved[0]}).\nQ({points[1][0]}|{points[1][1]}) ist ein {pointType[1]} (f''= {secondDerivativeInsertedAndSolved[1]}).")
