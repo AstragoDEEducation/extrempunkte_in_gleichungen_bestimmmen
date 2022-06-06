@@ -1,4 +1,4 @@
-import sympy
+from sympy import *
 
 # Erstelle Variablen
 x, y, z = symbols("x y z")
