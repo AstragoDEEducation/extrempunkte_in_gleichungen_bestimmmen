@@ -31,8 +31,8 @@ mpmath = ">=0.19"
 
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.8.0,<3.9"
-content-hash = "37df649b76a88ab021e3381ce345b8c59021f19bf1db4e8886c046443417eff7"
+python-versions = ">=3.8.0"
+content-hash = "d513b66c45f78ef3106950ca00b05fb284948385bc5e06530690c2c6ca98cc96"
 
 [metadata.files]
 mpmath = [
