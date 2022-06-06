@@ -1,10 +1,4 @@
-try:
-    from sympy import *
-except:
-    import subprocess
-    subprocess.call("pip install sympy")
-
-    from sympy import *
+import sympy
 
 # Erstelle Variablen
 x, y, z = symbols("x y z")
