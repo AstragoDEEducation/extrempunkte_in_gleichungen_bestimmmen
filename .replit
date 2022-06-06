@@ -1,2 +1,4 @@
 language = "python3"
 run = "poetry run python3 ./main.py"
+
+onBoot = "bash ./install.sh"

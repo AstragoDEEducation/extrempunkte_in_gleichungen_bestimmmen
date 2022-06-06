@@ -6,9 +6,10 @@ x, y, z = symbols("x y z")
 # Gleichung (Gleichungsteil, Ergebnis)
 inEq = [2*x**3 - 15*x**2 + 36*x + 12, 0]
 
+
 # Testing Equations:
 
-# inEq = [(1/10) * x ** 3 + 2 * x ** 2 - 4 * x - 12, 0]
+# inEq = [(1/10)*x**3 + 2*x**2 - 4*x - 12, 0]
 # L> Works (x1 = -14.27 und x2 = 0.93 --> -4.56 && 4.56)
 
 # Erstelle die erste Ableitung
@@ -57,4 +58,4 @@ else:
     pointType[1] = ("Sattelpunkt")
 
 # Formatierte Ausgabe der Ergebnisse
-print(f"P({points[0][0]}|{points[0][1]}) ist ein {pointType[0]} (f''= {secondDerivativeInsertedAndSolved[0]}).\nQ({points[1][0]}|{points[1][1]}) ist ein {pointType[1]} (f''= {secondDerivativeInsertedAndSolved[1]}).")
+print(f"P({points[0][0]} | {points[0][1]}) ist ein {pointType[0]} (f''= {secondDerivativeInsertedAndSolved[0]}).\nQ({points[1][0]} | {points[1][1]}) ist ein {pointType[1]} (f''= {secondDerivativeInsertedAndSolved[1]}).")
