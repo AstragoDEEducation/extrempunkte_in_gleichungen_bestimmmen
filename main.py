@@ -3,8 +3,13 @@ from sympy import *
 # Erstelle Variablen
 x, y, z = symbols("x y z")
 
-# Gleichung (Gleichung, Ergebnis)
+# Gleichung (Gleichungsteil, Ergebnis)
 inEq = [2*x**3 - 15*x**2 + 36*x + 12, 0]
+
+# Testing Equations:
+
+# inEq = [(1/10) * x ** 3 + 2 * x ** 2 - 4 * x - 12, 0]
+# L> Works (x1 = -14.27 und x2 = 0.93 --> -4.56 && 4.56)
 
 # Erstelle die erste Ableitung
 firstDerivative = Eq(diff(inEq[0], x, 1), inEq[1])
