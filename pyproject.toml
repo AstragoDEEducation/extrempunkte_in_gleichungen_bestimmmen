@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "python-poetry-template"
+name = "extrempunkte_in_gleichungen_bestimmmen"
 version = "0.1.0"
-description = "A replit python template by AstragoDE"
+description = "extrempunkte_in_gleichungen_bestimmmen"
 authors = ["AstragoDE <51675359+AstragoDE@users.noreply.github.com>"]
 license = "CC-BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
