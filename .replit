@@ -1,1 +1,24 @@
-run = "sh ./run-replit.sh"
+run = "bash ./run-replit.sh"
+
+hidden=[".gitignore", "run-replit.sh", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
+
+[nix]
+channel = "stable-21_11"
+
+[languages.python3]
+pattern = "**/*.py"
+syntax = "python"
+
+  [languages.python3.languageServer]
+  start = ["pylsp"]
+
+[env]
+REPLIT_POETRY_PYPI_REPOSITORY="https://package-proxy.replit.com/pypi/"
+MPLBACKEND="TkAgg"
+
+[packager]
+language = "python3"
+  [packager.features]
+  enabledForHosting = false
+  packageSearch = true
+  guessImports = false
