@@ -1,5 +1,7 @@
 from sympy import *
 
+input()
+
 # Erstelle Variablen
 x, y, z = symbols("x y z")
 

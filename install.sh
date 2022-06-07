@@ -1,2 +1,0 @@
-poetry update
-poetry install
