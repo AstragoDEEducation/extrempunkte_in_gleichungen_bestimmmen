@@ -1,0 +1,3 @@
+onBoot = "echo ===== onBoot COMMMAND ====="
+
+run = "poetry run python3 ./main.py"
