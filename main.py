@@ -4,7 +4,7 @@ from sympy import *
 x, y, z = symbols("x y z")
 
 # Gleichung (Gleichungsteil, Ergebnis) AKTUELL FEHLERHAFT
-inEq = [1*x**3 + 1*x**2 - 4*x - 4, 0]
+inEq = [3*x**2 + 2*x - 4, 0]
 
 
 # Testing Equations:
@@ -59,3 +59,7 @@ else:
 
 # Formatierte Ausgabe der Ergebnisse
 print(f"P({N(points[0][0])} | {N(points[0][1])}) ist ein {pointType[0]} (f''= {N(secondDerivativeInsertedAndSolved[0])}).\nQ({N(points[1][0])} | {N(points[1][1])}) ist ein {pointType[1]} (f''= {N(secondDerivativeInsertedAndSolved[1])}).")
+
+# Bei Wendepunkten trotzdem IMMER in die Ausgabgsfunktion einsetzen
+# Aus diesem Grund funktioniert WAHRSCHEINLICH die Wendepunktberrechnung nicht, da die eingegebene Gleichung ja bereits die 1. Ableitung ist, nach aktuellem Stand zumindest
+# 
