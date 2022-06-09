@@ -6,6 +6,8 @@ x, y, z = symbols("x y z")
 # Gleichung (Gleichungsteil, Ergebnis) AKTUELL FEHLERHAFT
 inEq = [2*x**3 + 15*x**2 + 36*x + 12, 0]
 
+# Stellen in der Ausgabe
+stellen: int = 6
 
 # Testing Equations:
 #
@@ -66,7 +68,7 @@ else:
 print("Extrempunkte:".upper())
 
 # Formatierte Ausgabe der Ergebnisse
-print(f"P({N(extremePoints[0][0])} | {N(extremePoints[0][1])}) ist ein {extremePointType[0]} (f''= {N(secondDerivativeInsertedAndSolved[0])}).\nQ({N(extremePoints[1][0])} | {N(extremePoints[1][1])}) ist ein {extremePointType[1]} (f''= {N(secondDerivativeInsertedAndSolved[1])}).")
+print(f"P({Float(N(extremePoints[0][0]), stellen)} | {Float(N(extremePoints[0][1]), stellen)}) ist ein {extremePointType[0]} (f''= {Float(N(secondDerivativeInsertedAndSolved[0]), stellen)}).\nQ({Float(N(extremePoints[1][0]), stellen)} | {Float(N(extremePoints[1][1]), stellen)}) ist ein {extremePointType[1]} (f''= {Float(N(secondDerivativeInsertedAndSolved[1]), stellen)}).")
 
 
 # ================================================================================================================================================================================================
@@ -103,15 +105,15 @@ turningPointType = [None, None]
 
 # Prüfung auf hinreichende Bedingungen für Punkt R
 if thirdDerivativeInsertedAndSolved[0] < 0:
-    turningPointType[0] = ("Rechts nach Links")
-
-elif thirdDerivativeInsertedAndSolved[0] > 0:
     turningPointType[0] = ("Links nach Rechts")
 
+elif thirdDerivativeInsertedAndSolved[0] > 0:
+    turningPointType[0] = ("Rechts nach Links")
+
 else:
-    turningPointType[0] = ("der nicht existieren sollte")
+    turningPointType[0] = ("ERROR ERROR ERROR")
 
 print("Wendepunkt:".upper())
 
 # Formatierte Ausgabe Des Ergebnisses
-print(f"R({N(turningPoints[0][0])} | {N(turningPoints[0][1])}) ist ein Wendepunkt von {turningPointType[0]} (f'''= {N(thirdDerivativeInsertedAndSolved[0])}).")
+print(f"R({Float(N(turningPoints[0][0]), stellen)} | {Float(N(turningPoints[0][1]), stellen)}) ist ein Wendepunkt von {turningPointType[0]} (f'''= {Float(N(thirdDerivativeInsertedAndSolved[0]), stellen)}).")
