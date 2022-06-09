@@ -26,7 +26,7 @@ secondDerivativeInsertedAndSolved = []
 # Liste mit beiden Punkten
 extremePoints = []
 
-# Führe füe beide Lösungen der 1. Ableitung aus
+# Führe für beide Lösungen der 1. Ableitung aus
 for j in firstDerivativeSolved:
 
     # Erstellen der 2. Ableitung und Einsetzen der Werte der 1. Ableitung:
@@ -63,7 +63,7 @@ else:
     extremePointType[1] = ("Sattelpunkt")
 
 
-print("Hochpunkt & Tiefpunkt:".upper())
+print("Extrempunkte:".upper())
 
 # Formatierte Ausgabe der Ergebnisse
 print(f"P({N(extremePoints[0][0])} | {N(extremePoints[0][1])}) ist ein {extremePointType[0]} (f''= {N(secondDerivativeInsertedAndSolved[0])}).\nQ({N(extremePoints[1][0])} | {N(extremePoints[1][1])}) ist ein {extremePointType[1]} (f''= {N(secondDerivativeInsertedAndSolved[1])}).")
