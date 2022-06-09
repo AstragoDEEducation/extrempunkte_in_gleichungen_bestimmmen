@@ -74,9 +74,6 @@ print(f"P({Float(N(extremePoints[0][0]), stellen)} | {Float(N(extremePoints[0][1
 # ================================================================================================================================================================================================
 
 
-# Bei Wendepunkten trotzdem IMMER in die Ausgabgsfunktion einsetzen
-# Aus diesem Grund funktioniert WAHRSCHEINLICH die Wendepunktberrechnung nicht, da die eingegebene Gleichung ja bereits die 1. Ableitung ist, nach aktuellem Stand zumindest
-
 # Erstelle die zweite Ableitung und löse sie
 secondDerivative = Eq(diff(inEq[0], x, 2), inEq[1])
 secondDerivativeSolved = solve(secondDerivative)
