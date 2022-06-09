@@ -21,4 +21,4 @@ language = "python3"
   [packager.features]
   enabledForHosting = false
   packageSearch = true
-  guessImports = false
+  guessImports = true

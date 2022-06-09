@@ -3,8 +3,8 @@ from sympy import *
 # Erstelle Variablen
 x, y, z = symbols("x y z")
 
-# Gleichung (Gleichungsteil, Ergebnis)
-inEq = [2*x**3 - 15*x**2 + 36*x + 12, 0]
+# Gleichung (Gleichungsteil, Ergebnis) AKTUELL FEHLERHAFT
+inEq = [1*x**3 + 1*x**2 - 4*x - 4, 0]
 
 
 # Testing Equations:
@@ -58,4 +58,4 @@ else:
     pointType[1] = ("Sattelpunkt")
 
 # Formatierte Ausgabe der Ergebnisse
-print(f"P({points[0][0]} | {points[0][1]}) ist ein {pointType[0]} (f''= {secondDerivativeInsertedAndSolved[0]}).\nQ({points[1][0]} | {points[1][1]}) ist ein {pointType[1]} (f''= {secondDerivativeInsertedAndSolved[1]}).")
+print(f"P({N(points[0][0])} | {N(points[0][1])}) ist ein {pointType[0]} (f''= {N(secondDerivativeInsertedAndSolved[0])}).\nQ({N(points[1][0])} | {N(points[1][1])}) ist ein {pointType[1]} (f''= {N(secondDerivativeInsertedAndSolved[1])}).")
